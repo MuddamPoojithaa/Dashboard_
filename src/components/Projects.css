@@ -1,0 +1,46 @@
+.projects-page {
+    padding: 50px 30px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .projects-page h1 {
+    font-size: 36px;
+    color: #013f87;
+    margin-bottom: 30px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    font-size: 20px;
+    color: #013f87;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  

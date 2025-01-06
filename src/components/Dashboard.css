@@ -1,0 +1,29 @@
+.sidebar {
+    width: 170px;
+    height: 100vh;
+   background-color: gray;
+    
+    color:black;
+    padding: 20px;
+    position: fixed;
+  }
+
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 20px 0;
+  }
+  
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+  }
+  

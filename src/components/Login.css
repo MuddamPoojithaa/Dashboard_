@@ -1,0 +1,117 @@
+/* Login Container */
+.login-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -5px;
+    margin-left: -20px;
+   
+    
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+  }
+  
+  .login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay to dull the background image */
+    z-index: 1;
+  }
+  
+  .login-form {
+
+    
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+  
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: slideInDown 0.5s ease-out; /* Slide-in animation */
+  }
+  
+  .login-form input {
+    display: block;
+    margin: 12px 0;
+    padding: 14px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transition effect for input focus */
+  }
+  
+  .login-form input:focus {
+    border-color: #0288d1;
+    outline: none;
+  }
+  
+  .login-form button {
+    padding: 14px;
+    width: 100%;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounceIn 1s ease-out; /* Bounce-in animation */
+  }
+  
+  .login-form button:hover {
+    background-color: #0277bd;
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .error-message {
+    color: #e53935;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+    animation: shake 0.5s; /* Shake animation for error message */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes bounceIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+  }
+  
